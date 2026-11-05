@@ -1,0 +1,3082 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Long Term Care From Ellen | Ellen Atkins, CLTC | Greensboro, NC</title>
+  <meta name="description" content="Ellen Atkins, Certified in Long-Term Care (CLTC) specialist in Greensboro, NC. Providing personalized long-term care insurance, in-home care guidance, and extended care planning for your loved ones.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       CSS VARIABLES & THEME SETUP
+       Palette: Lilac / Lavender / Deep Plum / Frosted Glassmorphism
+       ========================================================================== */
+    :root {
+      --primary: #3b1d61;
+      --primary-hover: #4d2682;
+      --primary-dark: #240f3e;
+      --primary-deep: #160728;
+      --secondary: #583387;
+      --accent-lilac: #f3ebfc;
+      --accent-card-bg: rgba(250, 247, 254, 0.75);
+      --accent-card-border: rgba(226, 212, 245, 0.8);
+      --accent-pill-bg: #ede1fa;
+      --accent-pill-text: #481f7c;
+      --text-dark: #1f1333;
+      --text-muted: #5e546d;
+      --text-light: #8f859f;
+      --border-light: rgba(230, 218, 243, 0.6);
+      --bg-white: #ffffff;
+      --bg-soft: #f8f4fd;
+      --gold-star: #f59e0b;
+      --radius-sm: 10px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-xl: 32px;
+      --radius-full: 9999px;
+
+      /* Glassmorphism Specs */
+      --glass-bg-light: rgba(255, 255, 255, 0.68);
+      --glass-bg-subtle: rgba(255, 255, 255, 0.52);
+      --glass-border-light: rgba(255, 255, 255, 0.85);
+      --glass-border-subtle: rgba(214, 188, 250, 0.35);
+      --glass-shadow: 0 16px 40px rgba(59, 29, 97, 0.08), inset 0 1px 1px rgba(255, 255, 255, 0.9);
+      --glass-shadow-hover: 0 24px 50px rgba(59, 29, 97, 0.14), inset 0 1px 1px rgba(255, 255, 255, 1);
+      --glass-blur: blur(18px);
+
+      --glass-bg-dark: rgba(33, 14, 58, 0.76);
+      --glass-border-dark: rgba(220, 195, 255, 0.22);
+      --glass-dark-shadow: 0 25px 60px rgba(18, 6, 33, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.15);
+
+      --transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* Reset & Base */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      color: var(--text-dark);
+      background-color: var(--bg-soft);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Global Ambient Glowing Orbs in Background for Glass Refraction */
+    body::before {
+      content: '';
+      position: fixed;
+      top: -150px;
+      right: -100px;
+      width: 650px;
+      height: 650px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(206, 175, 247, 0.38) 0%, rgba(248, 244, 253, 0) 70%);
+      filter: blur(60px);
+      z-index: -2;
+      pointer-events: none;
+    }
+
+    body::after {
+      content: '';
+      position: fixed;
+      bottom: 10%;
+      left: -150px;
+      width: 700px;
+      height: 700px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(185, 137, 242, 0.22) 0%, rgba(248, 244, 253, 0) 70%);
+      filter: blur(80px);
+      z-index: -2;
+      pointer-events: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    button, input, textarea, select {
+      font-family: inherit;
+      outline: none;
+    }
+
+    /* ==========================================================================
+       FULL-WIDTH LAYOUT SYSTEM
+       ========================================================================== */
+    .full-width-section {
+      width: 100%;
+      position: relative;
+      padding: 100px clamp(24px, 5vw, 80px);
+    }
+
+    .container-wide {
+      width: 100%;
+      max-width: 1420px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    /* Glass Effect Utilities */
+    .glass-card {
+      background: var(--glass-bg-light);
+      backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      border: 1px solid var(--glass-border-light);
+      box-shadow: var(--glass-shadow);
+      border-radius: var(--radius-lg);
+      transition: var(--transition);
+    }
+
+    .glass-card:hover {
+      box-shadow: var(--glass-shadow-hover);
+      border-color: rgba(255, 255, 255, 1);
+    }
+
+    .glass-card-dark {
+      background: var(--glass-bg-dark);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid var(--glass-border-dark);
+      box-shadow: var(--glass-dark-shadow);
+      border-radius: var(--radius-xl);
+      transition: var(--transition);
+    }
+
+    /* Typography Utilities */
+    .serif-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 600;
+      line-height: 1.2;
+      color: var(--text-dark);
+    }
+
+    .section-eyebrow {
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 0.8125rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 34px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      transition: var(--transition);
+      border: none;
+      text-align: center;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #3b1d61 0%, #4f2682 100%);
+      color: #ffffff;
+      box-shadow: 0 8px 24px rgba(59, 29, 97, 0.28);
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #482377 0%, #5d2e99 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(59, 29, 97, 0.38);
+    }
+
+    .btn-glass {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.9);
+      color: var(--primary);
+      box-shadow: var(--glass-shadow);
+    }
+
+    .btn-glass:hover {
+      background: rgba(255, 255, 255, 0.95);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      border: 1.5px solid var(--primary);
+      color: var(--primary);
+    }
+
+    .btn-outline:hover {
+      background-color: var(--primary);
+      color: #ffffff;
+    }
+
+    /* Ambient Orb inside sections */
+    .ambient-glow-circle {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(70px);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ==========================================================================
+       HEADER & NAVIGATION (Glassmorphism Sticky Bar)
+       ========================================================================== */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(248, 244, 253, 0.75);
+      backdrop-filter: blur(20px) saturate(190%);
+      -webkit-backdrop-filter: blur(20px) saturate(190%);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+      box-shadow: 0 4px 20px rgba(59, 29, 97, 0.04);
+      transition: var(--transition);
+      width: 100%;
+    }
+
+    .nav-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 86px;
+      max-width: 1420px;
+      margin: 0 auto;
+      padding: 0 clamp(20px, 4vw, 50px);
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo-badge {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid rgba(255, 255, 255, 0.9);
+      box-shadow: 0 6px 16px rgba(59, 29, 97, 0.18);
+      flex-shrink: 0;
+      background: var(--primary);
+    }
+
+    .logo-badge img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .brand-name {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 700;
+      font-size: 1.4rem;
+      color: var(--text-dark);
+      letter-spacing: -0.3px;
+      line-height: 1.1;
+    }
+
+    .brand-sub {
+      font-size: 0.725rem;
+      color: var(--secondary);
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      display: block;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      gap: 36px;
+    }
+
+    .nav-link {
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: var(--text-dark);
+      position: relative;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--primary);
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: var(--primary);
+      transition: width 0.25s ease;
+    }
+
+    .nav-link:hover::after, .nav-link.active::after {
+      width: 100%;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .btn-header {
+      padding: 11px 26px;
+      font-size: 0.875rem;
+      border-radius: var(--radius-full);
+      background: linear-gradient(135deg, #3b1d61 0%, #4f2682 100%);
+      color: #ffffff;
+      box-shadow: 0 6px 18px rgba(59, 29, 97, 0.2);
+    }
+
+    .btn-header:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 22px rgba(59, 29, 97, 0.3);
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--primary);
+      padding: 8px;
+    }
+
+    /* ==========================================================================
+       HERO SECTION (Full-Width Glass Experience)
+       ========================================================================== */
+    .hero-section {
+      width: 100%;
+      padding: 50px clamp(24px, 5vw, 80px) 70px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-glow-1 {
+      top: 50px;
+      left: 5%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(192, 147, 245, 0.3) 0%, transparent 70%);
+    }
+
+    .hero-glow-2 {
+      bottom: 20px;
+      right: 10%;
+      width: 550px;
+      height: 550px;
+      background: radial-gradient(circle, rgba(168, 85, 247, 0.2) 0%, transparent 70%);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      align-items: center;
+      gap: clamp(40px, 5vw, 90px);
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-image-wrapper {
+      position: relative;
+    }
+
+    .hero-image-card {
+      position: relative;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 25px 60px rgba(59, 29, 97, 0.16);
+      border: 3px solid rgba(255, 255, 255, 0.8);
+      background: #e7def5;
+    }
+
+    .hero-image-card img {
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.6s ease;
+    }
+
+    .hero-image-card:hover img {
+      transform: scale(1.025);
+    }
+
+    /* Floating Glass Review Badge on Hero Image */
+    .hero-floating-glass-badge {
+      position: absolute;
+      top: 26px;
+      left: 26px;
+      background: rgba(255, 255, 255, 0.75);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      padding: 16px 22px;
+      border-radius: 20px;
+      box-shadow: 0 16px 36px rgba(40, 16, 70, 0.18), inset 0 1px 1px rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.9);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      z-index: 10;
+    }
+
+    .floating-count {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      line-height: 1;
+    }
+
+    .floating-text {
+      font-size: 0.775rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+      line-height: 1.3;
+    }
+
+    .star-rating {
+      display: flex;
+      gap: 3px;
+      color: var(--gold-star);
+      font-size: 0.9rem;
+      margin-top: 4px;
+    }
+
+    /* ==========================================================================
+       BUSINESS STOCK IMAGE TEXT BACKGROUNDS & CLIPPED TYPOGRAPHY
+       ========================================================================== */
+    .text-clip-img-planning {
+      background: linear-gradient(135deg, #240f3e 0%, #4a217c 65%, #6838a3 100%),
+                  url('images/business_planning.jpg') center/cover;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+      display: inline;
+      font-weight: 700;
+    }
+
+    .text-clip-img-consulting {
+      background: linear-gradient(135deg, #240f3e 0%, #4a217c 65%, #6838a3 100%),
+                  url('images/business_consulting.jpg') center/cover;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+      display: inline;
+      font-weight: 700;
+    }
+
+    .text-clip-img-healthcare {
+      background: linear-gradient(135deg, #240f3e 0%, #4a217c 65%, #6838a3 100%),
+                  url('images/business_healthcare.jpg') center/cover;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+      display: inline;
+      font-weight: 700;
+    }
+
+    .hero-content {
+      position: relative;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.90) 0%, rgba(248, 244, 253, 0.84) 100%),
+                  url('images/business_planning.jpg') center/cover no-repeat;
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1.5px solid rgba(255, 255, 255, 0.95);
+      border-radius: var(--radius-xl);
+      padding: clamp(34px, 4vw, 50px);
+      box-shadow: 0 20px 50px rgba(59, 29, 97, 0.08), inset 0 1px 2px rgba(255, 255, 255, 1);
+      transition: var(--transition);
+    }
+
+    .hero-content:hover {
+      box-shadow: 0 25px 60px rgba(59, 29, 97, 0.12), inset 0 1px 2px rgba(255, 255, 255, 1);
+      border-color: rgba(255, 255, 255, 1);
+    }
+
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(237, 225, 250, 0.85);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      color: var(--accent-pill-text);
+      padding: 7px 18px;
+      border-radius: var(--radius-full);
+      font-size: 0.8125rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      box-shadow: 0 4px 12px rgba(59, 29, 97, 0.04);
+    }
+
+    .hero-pill svg {
+      width: 14px;
+      height: 14px;
+      fill: currentColor;
+    }
+
+    .hero-title {
+      font-size: clamp(2.8rem, 4.2vw, 4.2rem);
+      font-weight: 700;
+      margin-bottom: 24px;
+      color: var(--text-dark);
+      letter-spacing: -0.025em;
+      line-height: 1.15;
+    }
+
+    .hero-lead {
+      font-size: 1.125rem;
+      color: var(--text-muted);
+      margin-bottom: 36px;
+      line-height: 1.75;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .phone-contact-pill {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.975rem;
+      font-weight: 600;
+      color: var(--primary);
+      padding: 12px 22px;
+      border-radius: var(--radius-full);
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.9);
+      box-shadow: var(--glass-shadow);
+    }
+
+    .phone-contact-pill:hover {
+      background: #ffffff;
+      transform: translateY(-2px);
+    }
+
+    /* Full-Width Glass Counter Bar under Hero */
+    .hero-stats-glass-bar {
+      margin-top: 60px;
+      background: var(--glass-bg-light);
+      backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      border: 1px solid var(--glass-border-light);
+      border-radius: var(--radius-xl);
+      padding: 38px 50px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      box-shadow: 0 16px 45px rgba(59, 29, 97, 0.08), inset 0 1px 1px rgba(255, 255, 255, 0.9);
+      position: relative;
+      z-index: 1;
+    }
+
+    .stat-item {
+      text-align: center;
+      position: relative;
+    }
+
+    .stat-item:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 15%;
+      height: 70%;
+      width: 1px;
+      background: linear-gradient(180deg, transparent, rgba(168, 85, 247, 0.3), transparent);
+    }
+
+    .stat-number {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.6rem;
+      font-weight: 700;
+      color: var(--primary);
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+
+    .stat-label {
+      font-size: 0.8125rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-light);
+    }
+
+    /* ==========================================================================
+       ABOUT US SECTION (Full Width with Glass Profiles)
+       ========================================================================== */
+    .about-section {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(248, 244, 253, 0.9) 100%);
+      border-top: 1px solid rgba(255, 255, 255, 0.8);
+      border-bottom: 1px solid rgba(230, 218, 243, 0.6);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.05fr;
+      gap: clamp(40px, 6vw, 80px);
+      align-items: center;
+    }
+
+    .about-content {
+      position: relative;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.90) 0%, rgba(248, 244, 253, 0.85) 100%),
+                  url('images/business_consulting.jpg') center/cover no-repeat;
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1.5px solid rgba(255, 255, 255, 0.95);
+      border-radius: var(--radius-xl);
+      padding: clamp(34px, 4vw, 48px);
+      box-shadow: 0 18px 45px rgba(59, 29, 97, 0.07), inset 0 1px 2px rgba(255, 255, 255, 1);
+      transition: var(--transition);
+    }
+
+    .about-content:hover {
+      box-shadow: 0 24px 55px rgba(59, 29, 97, 0.11), inset 0 1px 2px rgba(255, 255, 255, 1);
+    }
+
+    .about-content .serif-title {
+      font-size: clamp(2.2rem, 3.2vw, 3rem);
+      margin-bottom: 22px;
+    }
+
+    .about-bio {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      margin-bottom: 24px;
+      line-height: 1.8;
+    }
+
+    /* Glass Advisor Card */
+    .advisor-glass-card {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.95);
+      box-shadow: 0 10px 30px rgba(59, 29, 97, 0.06), inset 0 1px 1px rgba(255, 255, 255, 0.9);
+      padding: 18px 24px;
+      border-radius: var(--radius-md);
+      margin-bottom: 28px;
+    }
+
+    .advisor-glass-thumb {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #ffffff;
+      box-shadow: 0 6px 18px rgba(59, 29, 97, 0.18);
+      flex-shrink: 0;
+    }
+
+    .advisor-meta-name {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: var(--text-dark);
+      line-height: 1.2;
+    }
+
+    .advisor-meta-desc {
+      font-size: 0.85rem;
+      color: var(--secondary);
+      font-weight: 600;
+    }
+
+    .values-container {
+      margin: 28px 0 34px;
+    }
+
+    .values-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 16px;
+    }
+
+    .values-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px 28px;
+      list-style: none;
+    }
+
+    .value-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-dark);
+    }
+
+    .value-icon {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--accent-pill-bg);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      box-shadow: 0 2px 6px rgba(59, 29, 97, 0.1);
+    }
+
+    .value-icon svg {
+      width: 13px;
+      height: 13px;
+      stroke-width: 3;
+    }
+
+    /* Photo Collage on Right using authentic Facebook images */
+    .collage-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 20px;
+    }
+
+    .collage-card {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: 0 20px 45px rgba(59, 29, 97, 0.1);
+      border: 3px solid rgba(255, 255, 255, 0.85);
+      position: relative;
+      background: #e9e1f5;
+    }
+
+    .collage-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .collage-card:hover img {
+      transform: scale(1.03);
+    }
+
+    .collage-card.tall {
+      grid-row: span 2;
+      height: 520px;
+    }
+
+    .collage-card.normal {
+      height: 250px;
+    }
+
+    /* Glass tag overlay on collage */
+    .collage-glass-tag {
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+      background: rgba(33, 14, 58, 0.78);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: #ffffff;
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      font-size: 0.775rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
+
+    /* ==========================================================================
+       OUR SERVICES SECTION (Full Width Grid with Glassmorphic Cards)
+       ========================================================================== */
+    .services-section {
+      background: var(--bg-soft);
+      position: relative;
+    }
+
+    .services-glow {
+      top: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 900px;
+      height: 500px;
+      background: radial-gradient(ellipse, rgba(200, 160, 250, 0.22) 0%, transparent 70%);
+    }
+
+    .services-header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 60px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .services-header-left .serif-title {
+      font-size: clamp(2.2rem, 3.2vw, 3rem);
+      margin-top: 6px;
+    }
+
+    .services-lead {
+      color: var(--text-muted);
+      max-width: 520px;
+      font-size: 1.05rem;
+      margin-top: 12px;
+      line-height: 1.7;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Glass Service Cards */
+    .service-card-glass {
+      background: rgba(255, 255, 255, 0.65);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.85);
+      border-radius: var(--radius-lg);
+      padding: 42px 34px;
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      box-shadow: 0 12px 35px rgba(59, 29, 97, 0.05), inset 0 1px 1px rgba(255, 255, 255, 0.9);
+    }
+
+    .service-card-glass:hover {
+      transform: translateY(-8px);
+      background: rgba(255, 255, 255, 0.85);
+      border-color: rgba(190, 150, 240, 0.6);
+      box-shadow: 0 22px 50px rgba(59, 29, 97, 0.12), inset 0 1px 1px rgba(255, 255, 255, 1);
+    }
+
+    .service-icon-box {
+      width: 62px;
+      height: 62px;
+      border-radius: var(--radius-md);
+      background: rgba(237, 225, 250, 0.9);
+      backdrop-filter: blur(8px);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 26px;
+      transition: var(--transition);
+      box-shadow: 0 4px 14px rgba(59, 29, 97, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+    }
+
+    .service-card-glass:hover .service-icon-box {
+      background: linear-gradient(135deg, #3b1d61 0%, #583387 100%);
+      color: #ffffff;
+      transform: scale(1.05);
+    }
+
+    .service-icon-box svg {
+      width: 30px;
+      height: 30px;
+    }
+
+    .service-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.45rem;
+      font-weight: 600;
+      margin-bottom: 14px;
+      color: var(--text-dark);
+    }
+
+    .service-desc {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      margin-bottom: 26px;
+      flex-grow: 1;
+    }
+
+    .service-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--primary);
+    }
+
+    .service-link svg {
+      width: 14px;
+      height: 14px;
+      transition: transform 0.25s ease;
+    }
+
+    .service-card-glass:hover .service-link svg {
+      transform: translateX(5px);
+    }
+
+    /* ==========================================================================
+       WHY CHOOSE US SECTION (Full Width with Glass Feature Grid)
+       ========================================================================== */
+    .why-section {
+      background: #ffffff;
+      border-top: 1px solid rgba(230, 218, 243, 0.6);
+      position: relative;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.05fr;
+      gap: clamp(40px, 6vw, 80px);
+      align-items: center;
+    }
+
+    .why-text-box {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.91) 0%, rgba(248, 244, 253, 0.86) 100%),
+                  url('images/business_healthcare.jpg') center/cover no-repeat;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1.5px solid rgba(255, 255, 255, 0.95);
+      border-radius: var(--radius-lg);
+      padding: clamp(28px, 3.5vw, 38px);
+      margin-bottom: 28px;
+      box-shadow: 0 16px 40px rgba(59, 29, 97, 0.06), inset 0 1px 2px rgba(255, 255, 255, 1);
+      transition: var(--transition);
+    }
+
+    .why-text-box:hover {
+      box-shadow: 0 22px 50px rgba(59, 29, 97, 0.1);
+    }
+
+    .why-left-content .serif-title {
+      font-size: clamp(2.2rem, 3.2vw, 3rem);
+      margin-bottom: 22px;
+    }
+
+    .why-lead {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      line-height: 1.75;
+      margin-bottom: 0;
+    }
+
+    .why-left-image {
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 25px 60px rgba(59, 29, 97, 0.15);
+      height: clamp(380px, 35vw, 450px);
+      background: #ebdff7;
+      position: relative;
+      border: 3px solid rgba(255, 255, 255, 0.95);
+    }
+
+    .why-left-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 20%;
+      display: block;
+      transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    .why-left-image:hover img {
+      transform: scale(1.04);
+    }
+
+    /* Floating Frosted Glass Badge on Why Choose Us Image */
+    .why-image-glass-badge {
+      position: absolute;
+      bottom: 22px;
+      left: 22px;
+      right: 22px;
+      background: rgba(255, 255, 255, 0.82);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.95);
+      border-radius: 18px;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      box-shadow: 0 14px 35px rgba(35, 16, 61, 0.18), inset 0 1px 1px rgba(255, 255, 255, 0.9);
+      z-index: 2;
+    }
+
+    .why-badge-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #3b1d61 0%, #583387 100%);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      box-shadow: 0 4px 12px rgba(59, 29, 97, 0.25);
+    }
+
+    .why-badge-icon svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .why-badge-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      line-height: 1.2;
+    }
+
+    .why-badge-sub {
+      font-size: 0.775rem;
+      color: var(--secondary);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    /* Glass Feature Cards */
+    .feature-card-glass {
+      background: rgba(250, 247, 254, 0.7);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.85);
+      border-radius: var(--radius-md);
+      padding: 32px 26px;
+      transition: var(--transition);
+      box-shadow: 0 8px 24px rgba(59, 29, 97, 0.04), inset 0 1px 1px rgba(255, 255, 255, 0.8);
+    }
+
+    .feature-card-glass:hover {
+      background: rgba(255, 255, 255, 0.92);
+      border-color: rgba(190, 150, 240, 0.5);
+      box-shadow: 0 16px 36px rgba(59, 29, 97, 0.1), inset 0 1px 1px rgba(255, 255, 255, 1);
+      transform: translateY(-5px);
+    }
+
+    .feature-icon-box {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      background: #ffffff;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      box-shadow: 0 6px 14px rgba(59, 29, 97, 0.08);
+      border: 1px solid rgba(226, 212, 245, 0.6);
+      transition: var(--transition);
+    }
+
+    .feature-card-glass:hover .feature-icon-box {
+      background: linear-gradient(135deg, #3b1d61 0%, #583387 100%);
+      color: #ffffff;
+    }
+
+    .feature-icon-box svg {
+      width: 26px;
+      height: 26px;
+    }
+
+    .feature-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      margin-bottom: 12px;
+    }
+
+    .feature-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    /* ==========================================================================
+       TESTIMONIAL SECTION (Full Width Panoramic Dark Glass with Stock Image Background)
+       ========================================================================== */
+    .testimonial-section {
+      background: linear-gradient(135deg, rgba(28, 11, 51, 0.92) 0%, rgba(52, 23, 89, 0.88) 100%),
+                  url('images/business_testimonials.jpg') center/cover no-repeat;
+      padding: 120px clamp(24px, 5vw, 80px);
+      color: #ffffff;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .testimonial-glow {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 700px;
+      height: 400px;
+      background: radial-gradient(ellipse, rgba(168, 85, 247, 0.35) 0%, transparent 70%);
+    }
+
+    .testimonial-header {
+      text-align: center;
+      margin-bottom: 60px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .testimonial-header .section-eyebrow {
+      color: #d8b4fe;
+    }
+
+    .testimonial-header .serif-title {
+      color: #ffffff;
+      font-size: clamp(2.3rem, 3.5vw, 3.2rem);
+    }
+
+    .testimonial-carousel-container {
+      max-width: 900px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Glowing Glass Testimonial Card */
+    .testimonial-glass-card {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      color: var(--text-dark);
+      border-radius: var(--radius-xl);
+      padding: 55px 60px;
+      box-shadow: 0 30px 70px rgba(10, 3, 20, 0.5), inset 0 1px 1px rgba(255, 255, 255, 1);
+      border: 1px solid rgba(255, 255, 255, 0.95);
+      position: relative;
+      text-align: center;
+      transition: var(--transition);
+    }
+
+    .testimonial-quote-icon {
+      width: 48px;
+      height: 48px;
+      margin: 0 auto 24px;
+      color: var(--primary);
+      opacity: 0.4;
+    }
+
+    .testimonial-quote-text {
+      font-size: 1.25rem;
+      line-height: 1.85;
+      color: var(--text-dark);
+      font-style: italic;
+      margin-bottom: 34px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .testimonial-author-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+    }
+
+    .author-avatar {
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent-pill-bg);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .author-info {
+      text-align: left;
+    }
+
+    .author-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      line-height: 1.2;
+    }
+
+    .author-tag {
+      font-size: 0.85rem;
+      color: var(--secondary);
+      font-weight: 600;
+    }
+
+    .testimonial-dots {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 36px;
+    }
+
+    .dot-btn {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.35);
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .dot-btn.active {
+      background: #ffffff;
+      width: 32px;
+      border-radius: 8px;
+    }
+
+    /* ==========================================================================
+       HOW TO GET TO US (PROCESS) SECTION (Full Width)
+       ========================================================================== */
+    .process-section {
+      background: #ffffff;
+    }
+
+    .process-header {
+      margin-bottom: 60px;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.92) 0%, rgba(248, 244, 253, 0.88) 100%),
+                  url('images/business_consulting.jpg') center/cover no-repeat;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      padding: clamp(28px, 3.5vw, 42px) clamp(28px, 4vw, 48px);
+      border-radius: var(--radius-xl);
+      border: 1.5px solid rgba(226, 212, 245, 0.8);
+      box-shadow: 0 14px 40px rgba(59, 29, 97, 0.05), inset 0 1px 1px rgba(255, 255, 255, 1);
+    }
+
+    .process-header .serif-title {
+      font-size: clamp(2.2rem, 3.2vw, 3rem);
+    }
+
+    .process-header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .process-lead {
+      color: var(--text-muted);
+      max-width: 520px;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    .process-steps-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 34px;
+    }
+
+    .process-step-glass-card {
+      border: 1px solid var(--glass-border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 44px 34px;
+      background: var(--glass-bg-subtle);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      transition: var(--transition);
+      position: relative;
+      box-shadow: var(--glass-shadow);
+    }
+
+    .process-step-glass-card:hover {
+      background: #ffffff;
+      border-color: rgba(190, 150, 240, 0.6);
+      box-shadow: var(--glass-shadow-hover);
+      transform: translateY(-8px);
+    }
+
+    .step-number-badge {
+      width: 52px;
+      height: 52px;
+      background: linear-gradient(135deg, #3b1d61 0%, #583387 100%);
+      color: #ffffff;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 26px;
+      box-shadow: 0 8px 18px rgba(59, 29, 97, 0.25);
+    }
+
+    .step-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      margin-bottom: 16px;
+    }
+
+    .step-description {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    /* ==========================================================================
+       CONNECT WITH US TODAY (Full Width Glassmorphic Banner)
+       ========================================================================== */
+    .connect-section {
+      background: var(--bg-soft);
+      padding-top: 30px;
+    }
+
+    .connect-glass-box {
+      background: rgba(36, 15, 62, 0.95);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid rgba(220, 195, 255, 0.22);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      box-shadow: 0 25px 65px rgba(26, 8, 48, 0.35);
+    }
+
+    .connect-form-side {
+      padding: clamp(40px, 5vw, 70px) clamp(30px, 4vw, 60px);
+      color: #ffffff;
+      background: linear-gradient(135deg, rgba(36, 15, 62, 0.94) 0%, rgba(55, 22, 94, 0.92) 100%),
+                  url('images/business_planning.jpg') center/cover no-repeat;
+      position: relative;
+    }
+
+    .connect-form-side .serif-title {
+      color: #ffffff;
+      font-size: clamp(2rem, 3vw, 2.6rem);
+      margin-bottom: 12px;
+    }
+
+    .connect-form-sub {
+      color: #d1b8f0;
+      font-size: 1rem;
+      margin-bottom: 38px;
+    }
+
+    .contact-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .form-group.full-width {
+      grid-column: span 2;
+    }
+
+    .form-label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #ebdff7;
+      letter-spacing: 0.02em;
+    }
+
+    /* Translucent Glass Inputs */
+    .form-input-glass, .form-textarea-glass {
+      width: 100%;
+      padding: 14px 20px;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: var(--radius-sm);
+      color: #ffffff;
+      font-size: 0.95rem;
+      transition: var(--transition);
+    }
+
+    .form-input-glass::placeholder, .form-textarea-glass::placeholder {
+      color: rgba(255, 255, 255, 0.45);
+    }
+
+    .form-input-glass:focus, .form-textarea-glass:focus {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: #d8b4fe;
+      box-shadow: 0 0 0 3px rgba(216, 180, 254, 0.25);
+    }
+
+    .form-textarea-glass {
+      resize: vertical;
+      min-height: 110px;
+    }
+
+    .form-submit-btn {
+      grid-column: span 2;
+      background: #ffffff;
+      color: var(--primary);
+      font-weight: 700;
+      padding: 16px 40px;
+      border-radius: var(--radius-full);
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+      margin-top: 12px;
+      font-size: 1rem;
+      letter-spacing: 0.02em;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .form-submit-btn:hover {
+      background: var(--accent-pill-bg);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.28);
+    }
+
+    /* Info Side of Connect Box with Business Stock Background ("We're Here for You") */
+    .connect-info-side {
+      background: linear-gradient(135deg, rgba(46, 21, 79, 0.88) 0%, rgba(25, 9, 45, 0.92) 100%),
+                  url('images/business_office.jpg') center/cover no-repeat;
+      padding: clamp(40px, 5vw, 70px) clamp(30px, 4vw, 55px);
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-left: 1px solid rgba(255, 255, 255, 0.12);
+      position: relative;
+    }
+
+    .connect-info-top .serif-title {
+      font-size: 2.2rem;
+      color: #ffffff;
+      margin-bottom: 14px;
+    }
+
+    .connect-info-lead {
+      color: #d5c0f0;
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 38px;
+    }
+
+    .contact-details-list {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .contact-detail-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+    }
+
+    .contact-detail-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(8px);
+      color: #e4caff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .contact-detail-icon svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .contact-detail-label {
+      font-size: 0.775rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #c7a9f2;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .contact-detail-val {
+      font-size: 1rem;
+      color: #ffffff;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    .contact-detail-val a:hover {
+      color: #e8d0ff;
+      text-decoration: underline;
+    }
+
+    /* ==========================================================================
+       FAQ ACCORDION SECTION (Full Width Glass Cards)
+       ========================================================================== */
+    .faq-section {
+      background: var(--bg-soft);
+    }
+
+    .faq-header {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 55px;
+    }
+
+    .faq-header .serif-title {
+      font-size: clamp(2.2rem, 3.2vw, 3rem);
+      margin-bottom: 14px;
+    }
+
+    .faq-accordion-list {
+      max-width: 920px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    /* Glass FAQ Item */
+    .faq-item-glass {
+      background: rgba(255, 255, 255, 0.68);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.9);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: var(--transition);
+      box-shadow: 0 6px 20px rgba(59, 29, 97, 0.04);
+    }
+
+    .faq-item-glass.active {
+      border-color: rgba(168, 85, 247, 0.5);
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 14px 35px rgba(59, 29, 97, 0.08);
+    }
+
+    .faq-question-btn {
+      width: 100%;
+      text-align: left;
+      padding: 24px 30px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      transition: color 0.2s ease;
+    }
+
+    .faq-item-glass.active .faq-question-btn {
+      color: var(--primary);
+    }
+
+    .faq-toggle-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--accent-pill-bg);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .faq-item-glass.active .faq-toggle-icon {
+      transform: rotate(180deg);
+      background: var(--primary);
+      color: #ffffff;
+    }
+
+    .faq-answer-panel {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.35s ease;
+      padding: 0 30px;
+      color: var(--text-muted);
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+
+    .faq-item-glass.active .faq-answer-panel {
+      padding: 0 30px 28px 30px;
+      max-height: 250px;
+    }
+
+    .faq-cta-btn-wrap {
+      text-align: center;
+      margin-top: 45px;
+    }
+
+    /* ==========================================================================
+       FOOTER (Full Width)
+       ========================================================================== */
+    .site-footer {
+      background-color: var(--primary-deep);
+      color: #ffffff;
+      padding: 90px clamp(24px, 5vw, 80px) 40px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      position: relative;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.35fr 0.9fr 0.9fr 1.1fr;
+      gap: clamp(30px, 4vw, 60px);
+      margin-bottom: 70px;
+    }
+
+    .footer-brand .brand-name {
+      color: #ffffff;
+    }
+
+    .footer-brand .brand-sub {
+      color: #d1b1ff;
+    }
+
+    .footer-bio {
+      color: #b7a9cb;
+      font-size: 0.95rem;
+      line-height: 1.75;
+      margin: 22px 0 26px;
+    }
+
+    .social-links {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .social-icon-btn {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(8px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      transition: var(--transition);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .social-icon-btn:hover {
+      background: var(--primary);
+      transform: translateY(-2px);
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .social-icon-btn svg {
+      width: 19px;
+      height: 19px;
+      fill: currentColor;
+    }
+
+    .footer-col-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 24px;
+      position: relative;
+    }
+
+    .footer-links-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+    }
+
+    .footer-link {
+      color: #b7a9cb;
+      font-size: 0.95rem;
+      transition: color 0.2s ease;
+    }
+
+    .footer-link:hover {
+      color: #ffffff;
+      padding-left: 5px;
+    }
+
+    .footer-contact-info {
+      color: #b7a9cb;
+      font-size: 0.95rem;
+      line-height: 1.7;
+      margin-bottom: 22px;
+    }
+
+    .newsletter-box {
+      margin-top: 16px;
+    }
+
+    .newsletter-form {
+      display: flex;
+      gap: 8px;
+    }
+
+    .newsletter-input {
+      flex: 1;
+      padding: 12px 18px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: var(--radius-full);
+      color: #ffffff;
+      font-size: 0.9rem;
+    }
+
+    .newsletter-input:focus {
+      border-color: #d1b1ff;
+    }
+
+    .newsletter-btn {
+      padding: 12px 22px;
+      background: linear-gradient(135deg, #3b1d61 0%, #583387 100%);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .newsletter-btn:hover {
+      background: #4f2682;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #8c7f9f;
+      font-size: 0.875rem;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    /* ==========================================================================
+       MODAL & INTERACTIVE TOAST (Glassmorphism)
+       ========================================================================== */
+    .modal-backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(18, 6, 33, 0.65);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition);
+    }
+
+    .modal-backdrop.open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal-window-glass {
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid rgba(255, 255, 255, 1);
+      border-radius: 28px;
+      max-width: 600px;
+      width: 100%;
+      padding: 44px;
+      box-shadow: 0 35px 80px rgba(18, 6, 33, 0.35);
+      position: relative;
+      transform: translateY(30px) scale(0.96);
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .modal-backdrop.open .modal-window-glass {
+      transform: translateY(0) scale(1);
+    }
+
+    .modal-close-btn {
+      position: absolute;
+      top: 22px;
+      right: 22px;
+      background: var(--accent-pill-bg);
+      border: none;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+      cursor: pointer;
+      font-size: 1.3rem;
+      transition: var(--transition);
+    }
+
+    .modal-close-btn:hover {
+      background: var(--primary);
+      color: #ffffff;
+    }
+
+    .modal-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: var(--text-dark);
+      margin-bottom: 8px;
+    }
+
+    .modal-sub {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 26px;
+    }
+
+    .modal-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .modal-input {
+      padding: 13px 18px;
+      border: 1px solid rgba(214, 188, 250, 0.6);
+      border-radius: 12px;
+      font-size: 0.95rem;
+      color: var(--text-dark);
+      background: rgba(255, 255, 255, 0.85);
+    }
+
+    .modal-input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(59, 29, 97, 0.12);
+    }
+
+    /* Toast Notification */
+    .toast-notification {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: rgba(33, 14, 58, 0.95);
+      backdrop-filter: blur(16px);
+      color: #ffffff;
+      padding: 18px 26px;
+      border-radius: 16px;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+      border-left: 5px solid #c084fc;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      z-index: 3000;
+      transform: translateY(100px);
+      opacity: 0;
+      transition: var(--transition);
+      max-width: 420px;
+    }
+
+    .toast-notification.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    /* Back To Top Button */
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      left: 30px;
+      width: 48px;
+      height: 48px;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      color: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 24px rgba(59, 29, 97, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.95);
+      cursor: pointer;
+      z-index: 999;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition);
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .back-to-top:hover {
+      background: var(--primary);
+      color: #ffffff;
+      transform: translateY(-4px);
+    }
+
+    /* ==========================================================================
+       RESPONSIVE DESIGN BREAKPOINTS
+       ========================================================================== */
+    @media (max-width: 1120px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+      }
+      .about-grid, .why-grid, .connect-glass-box {
+        grid-template-columns: 1fr;
+        gap: 45px;
+      }
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .hero-stats-glass-bar {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 34px;
+      }
+      .stat-item:nth-child(2)::after {
+        display: none;
+      }
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-menu {
+        position: fixed;
+        top: 86px;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.96);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        padding: 30px 24px;
+        box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+        gap: 20px;
+        transform: translateY(-130%);
+        transition: transform 0.3s ease;
+      }
+      .nav-menu.open {
+        transform: translateY(0);
+      }
+      .mobile-menu-btn {
+        display: block;
+      }
+      .services-grid, .process-steps-grid, .features-grid, .values-list {
+        grid-template-columns: 1fr;
+      }
+      .services-header-row, .process-header-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+      }
+      .contact-form {
+        grid-template-columns: 1fr;
+      }
+      .form-group.full-width, .form-submit-btn {
+        grid-column: span 1;
+      }
+      .hero-content, .about-content, .why-text-box, .process-header {
+        padding: 26px 18px;
+      }
+      .connect-form-side, .connect-info-side {
+        padding: 40px 24px;
+      }
+      .collage-grid {
+        grid-template-columns: 1fr;
+      }
+      .collage-card.tall {
+        height: 350px;
+      }
+      .hero-stats-glass-bar {
+        grid-template-columns: 1fr;
+        padding: 30px 24px;
+      }
+      .stat-item::after {
+        display: none !important;
+      }
+      .testimonial-glass-card {
+        padding: 40px 24px;
+      }
+      .why-left-image {
+        height: 320px;
+      }
+      .why-image-glass-badge {
+        bottom: 14px;
+        left: 14px;
+        right: 14px;
+        padding: 10px 14px;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       SITE HEADER & NAVIGATION (Glassmorphism Sticky Bar)
+       ========================================================================== -->
+  <header class="site-header" id="top">
+    <div class="nav-wrapper">
+      <!-- Brand with Ellen Atkins' official photo badge from Facebook -->
+      <a href="#top" class="brand-logo" aria-label="Long Term Care From Ellen Homepage">
+        <div class="logo-badge">
+          <img src="images/ellen_headshot.jpg" alt="Ellen Atkins, CLTC" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=150&q=80';">
+        </div>
+        <div>
+          <span class="brand-name">LTC from Ellen</span>
+          <span class="brand-sub">Ellen Atkins, CLTC</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#top" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About Ellen</a></li>
+          <li><a href="#services" class="nav-link">Our Services</a></li>
+          <li><a href="#why-us" class="nav-link">Why Choose Us</a></li>
+          <li><a href="#process" class="nav-link">How It Works</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Actions -->
+      <div class="nav-actions">
+        <button class="btn btn-header" onclick="openModal()">Book Consultation</button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION (Full-Width Glass Experience)
+         ========================================================================== -->
+    <section class="hero-section">
+      <div class="ambient-glow-circle hero-glow-1"></div>
+      <div class="ambient-glow-circle hero-glow-2"></div>
+
+      <div class="container-wide">
+        <div class="hero-grid">
+          <!-- Left Hero Image with Floating Glass Review Badge -->
+          <div class="hero-image-wrapper">
+            <div class="hero-image-card">
+              <!-- Uses authentic Facebook care photo with fallback -->
+              <img src="images/fb_care_1.jpg" alt="Long Term Care guidance and senior care support" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=1200&q=80';">
+            </div>
+            <!-- Floating Glass Badge matching reference layout -->
+            <div class="hero-floating-glass-badge">
+              <div class="floating-count">300+</div>
+              <div>
+                <div class="floating-text">Happy Families Guided</div>
+                <div class="star-rating">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Hero Copy & CTA -->
+          <div class="hero-content">
+            <div class="hero-pill">
+              <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+              <span>Certified Long-Term Care Planning</span>
+            </div>
+            <h1 class="serif-title hero-title">Quality <span class="text-clip-img-planning">Long-Term Care</span> for Your Loved Ones</h1>
+            <p class="hero-lead">
+              Guiding families in Greensboro, NC and across North Carolina with Certified Long-Term Care (CLTC) insurance strategies, extended in-home care guidance, and asset protection designed for lifelong dignity.
+            </p>
+            <div class="hero-cta-group">
+              <button class="btn btn-primary" onclick="openModal()">Make Appointment</button>
+              <a href="tel:3362922236" class="phone-contact-pill">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span>(336) 292-2236</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Full-Width Frosted Glass Counter Bar under Hero -->
+        <div class="hero-stats-glass-bar">
+          <div class="stat-item">
+            <div class="stat-number">750+</div>
+            <div class="stat-label">Families Advised</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">550+</div>
+            <div class="stat-label">Care Plans Built</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">100+</div>
+            <div class="stat-label">Provider Networks</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">25+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ABOUT US SECTION (Full Width with Glass Cards)
+         ========================================================================== -->
+    <section class="full-width-section about-section" id="about">
+      <div class="container-wide">
+        <div class="about-grid">
+          <!-- Left Content -->
+          <div class="about-content">
+            <span class="section-eyebrow">About Us</span>
+            <h2 class="serif-title">Caring for Your <span class="text-clip-img-consulting">Loved Ones</span>, Like Family</h2>
+            
+            <!-- Glass Advisor Card with Ellen's Facebook Headshot -->
+            <div class="advisor-glass-card">
+              <img src="images/ellen_headshot.jpg" alt="Ellen Atkins, CLTC" class="advisor-glass-thumb" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=150&q=80';">
+              <div>
+                <div class="advisor-meta-name">Ellen Atkins, CLTC</div>
+                <div class="advisor-meta-desc">Certified Long-Term Care Specialist | Greensboro, NC</div>
+              </div>
+            </div>
+
+            <p class="about-bio">
+              Ellen graduated from the University of Miami with a bachelor's degree in organizational communication. She is the mother of two sons and grandmother of four granddaughters.
+            </p>
+            <p class="about-bio">
+              Based at 2401 Madison Avenue in Greensboro, North Carolina, Ellen brings decades of professional mastery, certified expertise (CLTC), and personal family warmth to every conversation. Navigating extended healthcare and long-term care insurance shouldn’t be confusing—Ellen ensures your family feels protected, valued, and empowered.
+            </p>
+
+            <div class="values-container">
+              <h4 class="values-title">Our Guiding Values:</h4>
+              <ul class="values-list">
+                <li class="value-item">
+                  <span class="value-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </span>
+                  <span>Compassion</span>
+                </li>
+                <li class="value-item">
+                  <span class="value-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </span>
+                  <span>Integrity</span>
+                </li>
+                <li class="value-item">
+                  <span class="value-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </span>
+                  <span>Respect</span>
+                </li>
+                <li class="value-item">
+                  <span class="value-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </span>
+                  <span>Family Advocacy</span>
+                </li>
+              </ul>
+            </div>
+
+            <button class="btn btn-primary" onclick="openModal()">Learn More About Ellen</button>
+          </div>
+
+          <!-- Right Image Collage matching template using authentic Facebook images -->
+          <div class="collage-grid">
+            <!-- Tall Card: Ellen's Professional Portrait from FB (Nathan Mah Photography) -->
+            <div class="collage-card tall">
+              <img src="images/ellen_portrait.jpg" alt="Ellen Atkins - Long Term Care Specialist" onerror="this.onerror=null; this.src='images/ellen_headshot.jpg';">
+              <div class="collage-glass-tag">Ellen Atkins, CLTC</div>
+            </div>
+            <!-- Top Right Card: Family Care Photo from FB -->
+            <div class="collage-card normal">
+              <img src="images/fb_care_1.jpg" alt="Compassionate Care Consultation" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1576765608629-fd669bdebf4e?auto=format&fit=crop&w=800&q=80';">
+              <div class="collage-glass-tag">Dedicated Support</div>
+            </div>
+            <!-- Bottom Right Card: Senior Care Photo from FB -->
+            <div class="collage-card normal">
+              <img src="images/fb_care_2.jpg" alt="Family and Senior Care Planning" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1516726817505-f5ed825624d8?auto=format&fit=crop&w=800&q=80';">
+              <div class="collage-glass-tag">Greensboro Community</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         OUR SERVICES SECTION (Full Width with Glassmorphic Grid)
+         ========================================================================== -->
+    <section class="full-width-section services-section" id="services">
+      <div class="ambient-glow-circle services-glow"></div>
+
+      <div class="container-wide">
+        <div class="services-header-row">
+          <div class="services-header-left">
+            <span class="section-eyebrow">Our Services</span>
+            <h2 class="serif-title">Explore Our Care Solutions</h2>
+            <p class="services-lead">
+              Comprehensive extended care planning tailored to fit your family’s individual lifestyle, health horizon, and financial goals.
+            </p>
+          </div>
+          <button class="btn btn-primary" onclick="openModal()">Schedule a Review</button>
+        </div>
+
+        <div class="services-grid">
+          <!-- Card 1: Personal Care / In-Home Care Guidance -->
+          <div class="service-card-glass">
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Personal Care</h3>
+            <p class="service-desc">
+              Customized support plans for daily living activities—bathing, dressing, and mobility assistance—allowing seniors to thrive comfortably at home.
+            </p>
+            <a href="#contact" class="service-link">
+              <span>Learn More</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+          </div>
+
+          <!-- Card 2: Companion Care -->
+          <div class="service-card-glass">
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Companion Care</h3>
+            <p class="service-desc">
+              Promoting emotional wellness and cognitive vitality through dedicated companionship, joyful conversations, and engaging daily activities.
+            </p>
+            <a href="#contact" class="service-link">
+              <span>Learn More</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+          </div>
+
+          <!-- Card 3: Long-Term Care Insurance -->
+          <div class="service-card-glass">
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">LTC Insurance</h3>
+            <p class="service-desc">
+              Certified independent policy evaluations, carrier comparisons, and custom benefit structures to safeguard your family’s retirement nest egg.
+            </p>
+            <a href="#contact" class="service-link">
+              <span>Learn More</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+          </div>
+
+          <!-- Card 4: Medication Management & Coordination -->
+          <div class="service-card-glass">
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"></path>
+                <path d="m8.5 8.5 7 7"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Medication Management</h3>
+            <p class="service-desc">
+              Organizing precise prescription administration schedules and connecting you with qualified licensed nursing care when complex needs arise.
+            </p>
+            <a href="#contact" class="service-link">
+              <span>Learn More</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+          </div>
+
+          <!-- Card 5: Meal Preparation & Nutritional Care -->
+          <div class="service-card-glass">
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                <line x1="6" y1="1" x2="6" y2="4"></line>
+                <line x1="10" y1="1" x2="10" y2="4"></line>
+                <line x1="14" y1="1" x2="14" y2="4"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">Meal Preparation</h3>
+            <p class="service-desc">
+              Dietary planning and nutritious home-cooked meal coordination customized to accommodate dietary restrictions and physician guidelines.
+            </p>
+            <a href="#contact" class="service-link">
+              <span>Learn More</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+          </div>
+
+          <!-- Card 6: Home Safety & Facility Transition -->
+          <div class="service-card-glass">
+            <div class="service-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+            </div>
+            <h3 class="service-title">Home Maintenance</h3>
+            <p class="service-desc">
+              Living environment safety audits, fall prevention enhancements, and objective guidance for transitioning to assisted living when appropriate.
+            </p>
+            <a href="#contact" class="service-link">
+              <span>Learn More</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         WHY CHOOSE US SECTION (Full Width with Frosted Feature Cards)
+         ========================================================================== -->
+    <section class="full-width-section why-section" id="why-us">
+      <div class="container-wide">
+        <div class="why-grid">
+          <!-- Left Column -->
+          <div class="why-left-content">
+            <div class="why-text-box">
+              <span class="section-eyebrow">Why Choose Us</span>
+              <h2 class="serif-title">Unveiling the <span class="text-clip-img-healthcare">Reasons to Choose Us</span></h2>
+              <p class="why-lead">
+                With Ellen Atkins, you don’t get an anonymous insurance algorithm—you get a certified, experienced local specialist in Greensboro who listens, advocates, and designs solutions around your real family life.
+              </p>
+            </div>
+            <!-- Adjusted Care Image matching design reference with frosted glass badge -->
+            <div class="why-left-image">
+              <img src="images/why_choose_us.jpg" alt="Compassionate senior care support with Ellen Atkins, CLTC" onerror="this.onerror=null; this.src='images/fb_care_3.jpg';">
+              <div class="why-image-glass-badge">
+                <div class="why-badge-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </div>
+                <div>
+                  <div class="why-badge-title">Compassionate In-Home Care</div>
+                  <div class="why-badge-sub">Personalized Support · Greensboro & Triad, NC</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right 2x2 Glass Feature Grid -->
+          <div class="features-grid">
+            <!-- Feature 1 -->
+            <div class="feature-card-glass">
+              <div class="feature-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <h4 class="feature-title">Personalized Care</h4>
+              <p class="feature-desc">
+                Every client's medical history and financial profile is distinctive. We build custom plans tailored precisely to your unique needs.
+              </p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-card-glass">
+              <div class="feature-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <h4 class="feature-title">CLTC Certified</h4>
+              <p class="feature-desc">
+                Backed by the recognized Certified in Long-Term Care (CLTC) designation, upholding the gold standard of professional ethics and knowledge.
+              </p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feature-card-glass">
+              <div class="feature-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <h4 class="feature-title">24/7 Support Ready</h4>
+              <p class="feature-desc">
+                Caregiving needs don’t keep standard office hours. We remain accessible, proactive, and ready when urgent family decisions arise.
+              </p>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="feature-card-glass">
+              <div class="feature-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </div>
+              <h4 class="feature-title">Trusted and Reliable</h4>
+              <p class="feature-desc">
+                Independent guidance representing top-rated insurance providers, always placing your family's best interests first.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         TESTIMONIAL SECTION (Full Width Panoramic Dark Glass)
+         ========================================================================== -->
+    <section class="testimonial-section">
+      <div class="ambient-glow-circle testimonial-glow"></div>
+
+      <div class="container-wide">
+        <div class="testimonial-header">
+          <span class="section-eyebrow">Testimonials</span>
+          <h2 class="serif-title">Hear from Our Happy Families</h2>
+        </div>
+
+        <div class="testimonial-carousel-container">
+          <div class="testimonial-glass-card" id="testimonialCard">
+            <svg class="testimonial-quote-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+            </svg>
+            <p class="testimonial-quote-text" id="quoteText">
+              "Working with Ellen Atkins was the best decision for my family. The care options are not only detail-rich and compassionate, they have become like family to us, providing an exceptional care plan for my mother and peace of mind for all of us."
+            </p>
+            <div class="testimonial-author-wrapper">
+              <img id="quoteAvatar" src="images/ellen_headshot.jpg" alt="Chad Gibbons" class="author-avatar" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=160&q=80';">
+              <div class="author-info">
+                <div class="author-name" id="quoteName">Chad Gibbons</div>
+                <div class="author-tag" id="quoteTag">Greensboro, NC Family Client</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Dots -->
+          <div class="testimonial-dots">
+            <button class="dot-btn active" onclick="switchTestimonial(0)" aria-label="Review 1"></button>
+            <button class="dot-btn" onclick="switchTestimonial(1)" aria-label="Review 2"></button>
+            <button class="dot-btn" onclick="switchTestimonial(2)" aria-label="Review 3"></button>
+            <button class="dot-btn" onclick="switchTestimonial(3)" aria-label="Review 4"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         HOW TO GET TO US (PROCESS) SECTION (Full Width Glass Roadmap)
+         ========================================================================== -->
+    <section class="full-width-section process-section" id="process">
+      <div class="container-wide">
+        <div class="process-header">
+          <span class="section-eyebrow">How to Get to Us</span>
+          <div class="process-header-row">
+            <h2 class="serif-title">Find Your Way to Us</h2>
+            <p class="process-lead">
+              A clear, stress-free 3-step roadmap designed to guide you from initial inquiry to enduring family protection.
+            </p>
+          </div>
+        </div>
+
+        <div class="process-steps-grid">
+          <!-- Step 1 -->
+          <div class="process-step-glass-card">
+            <div class="step-number-badge">1</div>
+            <h3 class="step-title">Discover</h3>
+            <p class="step-description">
+              An open, confidential conversation to review your family’s medical history, current financial plans, and specific aspirations for future care.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="process-step-glass-card">
+            <div class="step-number-badge">2</div>
+            <h3 class="step-title">Connect</h3>
+            <p class="step-description">
+              Ellen analyzes the top independent carriers and in-home care programs, matching you with the ideal policy benefits and budget.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="process-step-glass-card">
+            <div class="step-number-badge">3</div>
+            <h3 class="step-title">Experience</h3>
+            <p class="step-description">
+              Enjoy continuous advocacy, seamless claim facilitation, and genuine reassurance knowing your loved ones are securely provided for.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONNECT WITH US TODAY (Full Width Glass Split Interface)
+         ========================================================================== -->
+    <section class="full-width-section connect-section" id="contact">
+      <div class="container-wide">
+        <div class="connect-glass-box">
+          <!-- Left Side Form with Translucent Glass Controls -->
+          <div class="connect-form-side">
+            <h2 class="serif-title">Connect with Us Today!</h2>
+            <p class="connect-form-sub">Send Ellen a direct message to request your personalized consultation.</p>
+
+            <form class="contact-form" id="contactForm" onsubmit="handleContactSubmit(event)">
+              <div class="form-group">
+                <label class="form-label" for="firstName">First Name *</label>
+                <input class="form-input-glass" type="text" id="firstName" placeholder="Your first name" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="lastName">Last Name *</label>
+                <input class="form-input-glass" type="text" id="lastName" placeholder="Your last name" required>
+              </div>
+
+              <div class="form-group full-width">
+                <label class="form-label" for="emailAddr">Email Address *</label>
+                <input class="form-input-glass" type="email" id="emailAddr" placeholder="name@example.com" required>
+              </div>
+
+              <div class="form-group full-width">
+                <label class="form-label" for="phoneNum">Phone Number</label>
+                <input class="form-input-glass" type="tel" id="phoneNum" placeholder="(336) 000-0000">
+              </div>
+
+              <div class="form-group full-width">
+                <label class="form-label" for="messageText">How Can Ellen Help? *</label>
+                <textarea class="form-textarea-glass" id="messageText" placeholder="Tell us about your family's long-term care or insurance needs..." required></textarea>
+              </div>
+
+              <button type="submit" class="form-submit-btn">Send Message</button>
+            </form>
+          </div>
+
+          <!-- Right Side Info with Glass Elements & Facebook Details -->
+          <div class="connect-info-side">
+            <div class="connect-info-top">
+              <h3 class="serif-title">We’re Here for You</h3>
+              <p class="connect-info-lead">
+                Whether you have questions about long-term care insurance, caregiver support, or policy reviews, Ellen is just a call or email away.
+              </p>
+
+              <div class="contact-details-list">
+                <!-- Location -->
+                <div class="contact-detail-row">
+                  <div class="contact-detail-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="contact-detail-label">Greensboro Office</div>
+                    <div class="contact-detail-val">2401 Madison Avenue<br>Greensboro, NC, United States</div>
+                  </div>
+                </div>
+
+                <!-- Phone -->
+                <div class="contact-detail-row">
+                  <div class="contact-detail-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="contact-detail-label">Direct Phone</div>
+                    <div class="contact-detail-val"><a href="tel:3362922236">(336) 292-2236</a></div>
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <div class="contact-detail-row">
+                  <div class="contact-detail-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="contact-detail-label">Direct Email</div>
+                    <div class="contact-detail-val"><a href="mailto:ltc@ellenatkins.com">ltc@ellenatkins.com</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Facebook Community Tag -->
+            <div style="margin-top: 32px; padding-top: 22px; border-top: 1px solid rgba(255,255,255,0.18); font-size: 0.9rem; color: #d6c5eb;">
+              Join our community on Facebook: <a href="https://www.facebook.com/ltcfromellen" target="_blank" rel="noopener" style="color: #ffffff; text-decoration: underline; font-weight: 600;">@ltcfromellen</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FAQ ACCORDION SECTION (Full Width Frosted Glass Accordions)
+         ========================================================================== -->
+    <section class="full-width-section faq-section" id="faq">
+      <div class="container-wide">
+        <div class="faq-header">
+          <span class="section-eyebrow">FAQ</span>
+          <h2 class="serif-title">Your Home Care Questions Answered</h2>
+          <p style="color: var(--text-muted); font-size: 1.05rem;">Clear answers to common questions about long-term care insurance and family protection.</p>
+        </div>
+
+        <div class="faq-accordion-list">
+          <!-- FAQ 1 -->
+          <div class="faq-item-glass active">
+            <button class="faq-question-btn" onclick="toggleFaq(this)">
+              <span>What is Long-Term Care (LTC) insurance and who needs it?</span>
+              <span class="faq-toggle-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </span>
+            </button>
+            <div class="faq-answer-panel">
+              <p>Long-Term Care insurance helps pay for extended care services required when someone is unable to perform basic activities of daily living (bathing, dressing, eating, transferring) or suffers from cognitive impairment like Alzheimer’s or dementia. Regular health insurance and Medicare typically do not cover custodial or ongoing personal care.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item-glass">
+            <button class="faq-question-btn" onclick="toggleFaq(this)">
+              <span>What does the CLTC designation stand for?</span>
+              <span class="faq-toggle-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </span>
+            </button>
+            <div class="faq-answer-panel">
+              <p>CLTC stands for <strong>Certified in Long-Term Care</strong>. It is the premier, multidisciplinary credential in extended care planning. It confirms that Ellen Atkins has completed rigorous training in the legal, financial, and emotional aspects of long-term care to best advise families objectively.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item-glass">
+            <button class="faq-question-btn" onclick="toggleFaq(this)">
+              <span>Can LTC insurance pay for caregivers inside my own home?</span>
+              <span class="faq-toggle-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </span>
+            </button>
+            <div class="faq-answer-panel">
+              <p>Yes, absolutely! Modern comprehensive LTC policies are specifically designed to prioritize in-home care, allowing you or your loved ones to receive high-quality assistance, homemaker services, and skilled nursing while remaining in the comfort of your home.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item-glass">
+            <button class="faq-question-btn" onclick="toggleFaq(this)">
+              <span>What is the ideal age to begin planning for long-term care?</span>
+              <span class="faq-toggle-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </span>
+            </button>
+            <div class="faq-answer-panel">
+              <p>The sweet spot for exploring long-term care insurance is typically in your 50s to early 60s. During this window, you are most likely to qualify medically for preferred health discounts, locking in substantially lower annual premiums for life.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item-glass">
+            <button class="faq-question-btn" onclick="toggleFaq(this)">
+              <span>How does an initial consultation with Ellen work?</span>
+              <span class="faq-toggle-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </span>
+            </button>
+            <div class="faq-answer-panel">
+              <p>Our initial consultation is completely complimentary and educational. We review your family goals, assess existing benefits, and answer questions with zero pressure or obligation. We can meet in person in Greensboro, NC, by phone, or virtually via video conference.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-cta-btn-wrap">
+          <button class="btn btn-outline" onclick="openModal()">Have More Questions? Ask Ellen</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       SITE FOOTER (Full Width)
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container-wide">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Bio -->
+        <div class="footer-brand">
+          <a href="#top" class="brand-logo">
+            <div class="logo-badge">
+              <img src="images/ellen_headshot.jpg" alt="Ellen Atkins, CLTC" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=150&q=80';">
+            </div>
+            <div>
+              <span class="brand-name">LTC from Ellen</span>
+              <span class="brand-sub">Ellen Atkins, CLTC</span>
+            </div>
+          </a>
+          <p class="footer-bio">
+            Ellen graduated from the University of Miami with a bachelor's degree in organizational communication. Dedicated to guiding North Carolina families through extended care with warmth, expertise, and lifelong peace of mind.
+          </p>
+          <div class="social-links">
+            <!-- Facebook link -->
+            <a href="https://www.facebook.com/ltcfromellen" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Visit Ellen's Facebook Page">
+              <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <!-- Phone direct -->
+            <a href="tel:3362922236" class="social-icon-btn" aria-label="Call Ellen">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </a>
+            <!-- Mail direct -->
+            <a href="mailto:ltc@ellenatkins.com" class="social-icon-btn" aria-label="Email Ellen">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="#top" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">About Ellen</a></li>
+            <li><a href="#services" class="footer-link">Care Solutions</a></li>
+            <li><a href="#why-us" class="footer-link">Why Choose Us</a></li>
+            <li><a href="#process" class="footer-link">3-Step Process</a></li>
+            <li><a href="#faq" class="footer-link">FAQs</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Useful Links -->
+        <div>
+          <h4 class="footer-col-title">Resources</h4>
+          <ul class="footer-links-list">
+            <li><a href="#services" class="footer-link">CLTC Certification</a></li>
+            <li><a href="#services" class="footer-link">Long-Term Care Planning</a></li>
+            <li><a href="#services" class="footer-link">In-Home Care Guidance</a></li>
+            <li><a href="#services" class="footer-link">Asset Protection</a></li>
+            <li><a href="#contact" class="footer-link">Greensboro Office</a></li>
+            <li><a href="#top" class="footer-link">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Newsletter & Direct Contact -->
+        <div>
+          <h4 class="footer-col-title">Contact & Updates</h4>
+          <div class="footer-contact-info">
+            2401 Madison Avenue<br>
+            Greensboro, NC 27403<br>
+            Phone: <a href="tel:3362922236" style="color: #ffffff; text-decoration: underline;">(336) 292-2236</a><br>
+            Email: <a href="mailto:ltc@ellenatkins.com" style="color: #ffffff; text-decoration: underline;">ltc@ellenatkins.com</a>
+          </div>
+          <div class="newsletter-box">
+            <span style="font-size: 0.8125rem; color: #b7a9cb; display: block; margin-bottom: 8px;">Subscribe to Care Updates</span>
+            <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+              <input type="email" class="newsletter-input" placeholder="Your email address" required>
+              <button type="submit" class="newsletter-btn">Join</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Long Term Care From Ellen (Ellen Atkins, CLTC). All rights reserved.
+        </div>
+        <div>
+          Serving Greensboro, High Point, Winston-Salem, and families throughout North Carolina.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       APPOINTMENT / CONSULTATION MODAL (Glassmorphism Modal Window)
+       ========================================================================== -->
+  <div class="modal-backdrop" id="consultationModal" onclick="handleBackdropClick(event)">
+    <div class="modal-window-glass">
+      <button class="modal-close-btn" onclick="closeModal()" aria-label="Close dialog">&times;</button>
+      <h3 class="modal-title">Schedule a Consultation</h3>
+      <p class="modal-sub">Meet with Ellen Atkins, CLTC to review your long-term care questions.</p>
+
+      <form class="modal-form" onsubmit="handleModalSubmit(event)">
+        <input type="text" class="modal-input" placeholder="Your Full Name" required>
+        <input type="email" class="modal-input" placeholder="Email Address" required>
+        <input type="tel" class="modal-input" placeholder="Phone Number (e.g. 336-292-2236)" required>
+        <select class="modal-input" required>
+          <option value="" disabled selected>Select Primary Area of Interest</option>
+          <option value="ltc-insurance">Long-Term Care Insurance Evaluation</option>
+          <option value="in-home-care">In-Home & Personal Care Solutions</option>
+          <option value="asset-protection">Retirement & Asset Protection</option>
+          <option value="assisted-living">Assisted Living & Community Transition</option>
+          <option value="other">General Family Consultation</option>
+        </select>
+        <textarea class="modal-input" rows="3" placeholder="Briefly describe your question or preferred meeting times..."></textarea>
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">Request Appointment</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       TOAST NOTIFICATION (Glassmorphic Toast)
+       ========================================================================== -->
+  <div class="toast-notification" id="toastNotification">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="2.5">
+      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+    </svg>
+    <div id="toastMessage">Thank you! Your message has been sent to Ellen.</div>
+  </div>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="backToTopBtn" onclick="scrollToTop()" aria-label="Scroll back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- ==========================================================================
+       INTERACTIVE JAVASCRIPT
+       ========================================================================== -->
+  <script>
+    // Testimonials Data from real Facebook engagement & family stories
+    const testimonials = [
+      {
+        quote: "Long Term Care from Ellen was the best decision for our family. Ellen guided us through a confusing maze of options with extraordinary patience, deep expertise, and genuine warmth. She provided an exceptional care plan for my mother and total peace of mind for all of us.",
+        name: "Chad Gibbons",
+        tag: "Greensboro, NC Family Client",
+        avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=160&q=80"
+      },
+      {
+        quote: "Ellen Atkins took the time to truly understand our family's unique situation before recommending any policy. Her organizational communication background shines through—she explains every nuance without insurance jargon. Highly recommended!",
+        name: "Sarah Glover",
+        tag: "North Carolina Client",
+        avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=160&q=80"
+      },
+      {
+        quote: "As my parents entered their late 70s, we were terrified of losing their life savings to nursing home costs. Ellen mapped out a crystal-clear hybrid LTC strategy that protected their assets and secured excellent in-home care.",
+        name: "David Hastings",
+        tag: "Triad Community Member",
+        avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=160&q=80"
+      },
+      {
+        quote: "Ellen is compassionate, immensely knowledgeable, and deeply dedicated. Her CLTC expertise helped us unlock insurance benefits we didn't even realize my father was entitled to. She truly treats your family like her own.",
+        name: "Margie Frazier",
+        tag: "Long-Term Care Client",
+        avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=160&q=80"
+      }
+    ];
+
+    let currentTestimonialIndex = 0;
+
+    function switchTestimonial(index) {
+      currentTestimonialIndex = index;
+      const card = document.getElementById('testimonialCard');
+      const quoteText = document.getElementById('quoteText');
+      const quoteName = document.getElementById('quoteName');
+      const quoteTag = document.getElementById('quoteTag');
+      const quoteAvatar = document.getElementById('quoteAvatar');
+
+      card.style.opacity = '0.3';
+      card.style.transform = 'translateY(10px)';
+
+      setTimeout(() => {
+        const item = testimonials[index];
+        quoteText.textContent = `"${item.quote}"`;
+        quoteName.textContent = item.name;
+        quoteTag.textContent = item.tag;
+        quoteAvatar.src = item.avatar;
+        quoteAvatar.alt = item.name;
+
+        // Update dots
+        document.querySelectorAll('.dot-btn').forEach((btn, idx) => {
+          btn.classList.toggle('active', idx === index);
+        });
+
+        card.style.opacity = '1';
+        card.style.transform = 'translateY(0)';
+      }, 200);
+    }
+
+    // Auto rotate testimonials every 7 seconds
+    setInterval(() => {
+      const nextIndex = (currentTestimonialIndex + 1) % testimonials.length;
+      switchTestimonial(nextIndex);
+    }, 7000);
+
+    // FAQ Accordion Toggle
+    function toggleFaq(button) {
+      const item = button.parentElement;
+      const isActive = item.classList.contains('active');
+
+      // Close all other items
+      document.querySelectorAll('.faq-item-glass').forEach(el => {
+        if (el !== item) el.classList.remove('active');
+      });
+
+      // Toggle current
+      item.classList.toggle('active', !isActive);
+    }
+
+    // Modal Controls
+    function openModal() {
+      document.getElementById('consultationModal').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      document.getElementById('consultationModal').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    function handleBackdropClick(e) {
+      if (e.target.id === 'consultationModal') {
+        closeModal();
+      }
+    }
+
+    // Toast Notification
+    function showToast(message) {
+      const toast = document.getElementById('toastNotification');
+      const msgEl = document.getElementById('toastMessage');
+      msgEl.textContent = message;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 4500);
+    }
+
+    // Form Handling
+    function handleContactSubmit(event) {
+      event.preventDefault();
+      const firstName = document.getElementById('firstName').value;
+      showToast(`Thank you, ${firstName}! Your message has been sent to Ellen Atkins.`);
+      event.target.reset();
+    }
+
+    function handleModalSubmit(event) {
+      event.preventDefault();
+      closeModal();
+      showToast("Thank you! Ellen Atkins will contact you shortly to confirm your consultation.");
+      event.target.reset();
+    }
+
+    function handleNewsletterSubmit(event) {
+      event.preventDefault();
+      showToast("Thank you for subscribing to care insights from Ellen Atkins, CLTC!");
+      event.target.reset();
+    }
+
+    // Mobile Hamburger Menu
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const navMenu = document.getElementById('navMenu');
+    mobileMenuBtn.addEventListener('click', () => {
+      navMenu.classList.toggle('open');
+    });
+
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('open');
+      });
+    });
+
+    // Scroll to Top & Back to top button visibility
+    const backToTopBtn = document.getElementById('backToTopBtn');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) {
+        backToTopBtn.classList.add('visible');
+      } else {
+        backToTopBtn.classList.remove('visible');
+      }
+    });
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>

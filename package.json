@@ -1,0 +1,19 @@
+{
+  "name": "ltc-from-ellen",
+  "version": "1.0.0",
+  "description": "Long Term Care From Ellen - Professional Website for Ellen Atkins, CLTC (Greensboro, NC)",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "long-term-care",
+    "cltc",
+    "ellen-atkins",
+    "greensboro-nc",
+    "senior-care",
+    "insurance"
+  ],
+  "author": "Ellen Atkins, CLTC",
+  "license": "UNLICENSED"
+}
